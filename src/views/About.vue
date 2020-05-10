@@ -1,5 +1,6 @@
 <template lang='pug'>
-  .about
+  .about 
+    span Hello From About
 </template>
 
 <script>

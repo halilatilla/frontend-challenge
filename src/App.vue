@@ -2,7 +2,6 @@
   #app
     Header
     router-view  
-    Footer
 </template>
 
 <script>
@@ -22,10 +21,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(45, 46, 45);
-  color: $base-color;
-  margin: 0 auto;
-  position: relative;
+  color: $text-color;
 }
 a {
   text-decoration: none;
