@@ -41,10 +41,6 @@ export default {
   .recommended-cards {
     padding-bottom: 1rem;
     padding-top: 1rem;
-    /*   .cards {
-      overflow-x: scroll;
-      grid-auto-flow: column;
-    } */
   }
 }
 </style>
