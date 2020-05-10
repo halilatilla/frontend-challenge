@@ -37,6 +37,7 @@ export default {
   display: grid;
   grid-template-columns: 4fr 2fr;
   box-shadow: 1px 2px 3px rgba($color: #000000, $alpha: 1);
+  overflow: hidden;
   .img-previev {
     width: 100%;
     overflow: hidden;

@@ -1,34 +1,32 @@
 <script>
+import DetailHeader from "../components/detail/DetailHeader";
 import PreviewCards from "../components/PreviewCards";
-import ChannelCards from "../components/ChannelCards";
-import GameCards from "../components/GameCards";
+import DetailCard from "../components/detail/DetailCard";
+
 export default {
   components: {
-    ChannelCards,
-    GameCards,
-    PreviewCards
+    DetailCard,
+    DetailHeader
   },
   computed: {}
 };
 </script>
 
 <template lang='pug'>
-  .home
-    PreviewCards
-    ChannelCards
-    GameCards
+  .detail
+    DetailHeader
+    DetailCard
 
 </template>
 
 
 <style scoped lang='scss'>
-.home {
-  padding: 2rem;
+.detail {
   overflow: hidden;
+  height: 100%;
 }
 @media (max-width: $breakpoint-mobile) {
-  .home {
-    padding: 1rem;
+  .detail {
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <script>
 export default {
-  props: ["children", "activeBg"],
+  props: ["children", "activeBg", "svg"],
   computed: {
     setBg() {
       return this.activeBg ? "active-bg" : null;
@@ -12,7 +12,8 @@ export default {
 
 <template lang='pug'>
   .button(:class='setBg')
-    span {{ children }} 
+    img(:src="require(`../assets/${svg}`)" v-if='svg')
+    span {{ children }}
 </template>
 
 
@@ -27,6 +28,10 @@ export default {
   cursor: pointer;
   span {
     font-size: $base-font-size;
+  }
+  img {
+    width: 15px;
+    margin-right: 6px;
   }
   &:hover {
     opacity: 0.9;

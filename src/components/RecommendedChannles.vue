@@ -11,6 +11,8 @@ export default {
 
 <template lang='pug'>
   .container
+    .item
+      img(src='../assets/camera.svg')
     .item(v-for='i in 5')
       Thumbnail(children='https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png') 
     
@@ -26,9 +28,15 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
+
   .item {
     width: 30px;
-    margin-top: 9px;
+    margin-top: $base-margin;
+    text-align: center;
+    img {
+      width: 15px;
+      margin-top: 6px;
+    }
   }
 }
 </style>

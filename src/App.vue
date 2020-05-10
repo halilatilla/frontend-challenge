@@ -1,10 +1,3 @@
-<template lang='pug'>
-  #app
-    Header.header
-    RecommendedChannles
-    router-view  
-</template>
-
 <script>
 import "./styles/normalize.css";
 import Header from "./components/Header";
@@ -16,6 +9,13 @@ export default {
   }
 };
 </script>
+<template lang='pug'>
+  #app
+    Header.header
+    RecommendedChannles
+    router-view  
+</template>
+
 
 <style lang="scss">
 #app {
@@ -23,10 +23,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
-  background-color: $bg-color;
   display: grid;
   grid-template-columns: max-content 1fr;
-  overflow: hidden;
+  align-content: flex-start;
   .header {
     grid-column: 1/3;
   }
