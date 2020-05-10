@@ -1,17 +1,20 @@
 <template lang='pug'>
   .home
+    PreviewCards
     ChannelCards
     GameCards
 
 </template>
 
 <script>
+import PreviewCards from "../components/PreviewCards";
 import ChannelCards from "../components/ChannelCards";
 import GameCards from "../components/GameCards";
 export default {
   components: {
     ChannelCards,
-    GameCards
+    GameCards,
+    PreviewCards
   },
   computed: {}
 };
