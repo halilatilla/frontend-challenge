@@ -1,6 +1,6 @@
 <script>
-import Search from "../components/Search";
-import Button from "../components/Button";
+import Search from "../Search";
+import Button from "../Button";
 export default {
   components: {
     Search,
@@ -14,7 +14,7 @@ export default {
   nav.header
     .header-left
         router-link(to='/')
-          img(class='logo' src='../assets/logo.png')
+          img(class='logo' src='../../assets/logo.png')
         router-link(to='/Browse')
           .item Browse
         router-link(to='/Exports')
@@ -24,13 +24,13 @@ export default {
     Search.header-search
     .header-right
       span.item
-        img(src='../assets/interface.svg')
+        img(src='../../assets/interface.svg')
       span.item
         Button(children='Log in')       
       span.item
         Button(children='Sign up' activeBg="true")       
       span.item.svg
-        img(src='../assets/man-avatar.svg')
+        img(src='../../assets/man-avatar.svg')
    
 </template>
 

@@ -1,7 +1,7 @@
 <script>
 import "./styles/normalize.css";
-import Header from "./components/Header";
-import RecommendedChannles from "./components/RecommendedChannles";
+import Header from "./components/common/Header";
+import RecommendedChannles from "./components/common/RecommendedChannles";
 export default {
   components: {
     Header,
@@ -23,9 +23,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
-}
-a {
-  text-decoration: none;
-  color: inherit;
 }
 </style>

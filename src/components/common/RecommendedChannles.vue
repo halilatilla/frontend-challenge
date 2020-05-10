@@ -1,5 +1,5 @@
 <script>
-import Thumbnail from "../components/Thumbnail";
+import Thumbnail from "../Thumbnail";
 export default {
   props: ["children"],
   components: {
@@ -12,7 +12,7 @@ export default {
 <template lang='pug'>
   .container
     .item
-      img(src='../assets/camera.svg')
+      img(src='../../assets/camera.svg')
     .item(v-for='i in 5')
       Thumbnail(children='https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png') 
     
