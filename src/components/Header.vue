@@ -23,12 +23,15 @@ export default {
           .item Music
     Search.header-search
     .header-right
-      span.item messages        
+      span.item
+        img(src='../assets/interface.svg')
       span.item
         Button(children='Log in')       
       span.item
         Button(children='Sign up' activeBg="true")       
-      span.item profile       
+      span.item.svg
+        img(src='../assets/man-avatar.svg')
+   
 </template>
 
 
@@ -37,6 +40,7 @@ export default {
   background-color: $bg-color-secondary;
   height: 50px;
   padding: 3px;
+  padding-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,13 +68,35 @@ export default {
   }
   &-right {
     display: flex;
-    align-items: center;
     .item {
       margin-left: $base-margin;
+      img {
+        width: 18px;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: $border-radius-button;
+        &:hover {
+          background-color: $bg-color-button;
+        }
+      }
     }
   }
 }
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-mobile) {
+  .header {
+    &-left {
+      .item {
+        display: none;
+      }
+    }
+    &-right {
+      .item {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
   .header-search {
     display: none;
   }

@@ -1,16 +1,17 @@
 <template lang='pug'>
   .home
-    LiveChannels
+    ChannelCards
+    GameCards
 
 </template>
 
 <script>
-import GameCard from "../components/GameCard";
-import LiveChannels from "../components/LiveChannels";
+import ChannelCards from "../components/ChannelCards";
+import GameCards from "../components/GameCards";
 export default {
   components: {
-    GameCard,
-    LiveChannels
+    ChannelCards,
+    GameCards
   },
   computed: {}
 };
@@ -19,5 +20,11 @@ export default {
 <style scoped lang='scss'>
 .home {
   padding: 2rem;
+  overflow: hidden;
+}
+@media (max-width: $breakpoint-mobile) {
+  .home {
+    padding: 1rem;
+  }
 }
 </style>

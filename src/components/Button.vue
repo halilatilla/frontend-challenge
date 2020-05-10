@@ -12,7 +12,7 @@ export default {
 
 <template lang='pug'>
   .button(:class='setBg')
-    span {{ children }}     
+    span {{ children }} 
 </template>
 
 

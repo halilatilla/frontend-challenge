@@ -1,52 +1,20 @@
 [
   {
-    "username": "valorant",
+    "username": "anomaly",
     "title": "walorant lan with steffe",
-    "subtitle": "anomaly",
+    "gameName": "valorant",
     "language": "english",
     "category1": "fps",
     "category2": "shooter",
     "previewImg": "https://static-cdn.jtvnw.net/previews-ttv/live_user_anomaly-440x248.jpg",
     "videoImg": "https://unsplash.com/photos/oI6zrBj3nKw",
-    "thumbnail": "https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png",
+    "gameImg": "https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-188x250.jpg"
   },
   {
-    "username": "valorant",
+    "username": "anomaly",
     "title": "walorant lan with steffe",
-    "subtitle": "anomaly",
-    "language": "english",
-    "category1": "fps",
-    "category2": "shooter",
-    "previewImg": "https://static-cdn.jtvnw.net/previews-ttv/live_user_anomaly-440x248.jpg",
-    "videoImg": "https://unsplash.com/photos/oI6zrBj3nKw",
-    "thumbnail": "https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png"
-  },
-  {
-    "username": "valorant",
-    "title": "walorant lan with steffe",
-    "subtitle": "anomaly",
-    "language": "english",
-    "category1": "fps",
-    "category2": "shooter",
-    "previewImg": "https://static-cdn.jtvnw.net/previews-ttv/live_user_anomaly-440x248.jpg",
-    "videoImg": "https://unsplash.com/photos/oI6zrBj3nKw",
-    "thumbnail": "https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png"
-  },
-  {
-    "username": "valorant",
-    "title": "walorant lan with steffe",
-    "subtitle": "anomaly",
-    "language": "english",
-    "category1": "fps",
-    "category2": "shooter",
-    "previewImg": "https://static-cdn.jtvnw.net/previews-ttv/live_user_anomaly-440x248.jpg",
-    "videoImg": "https://unsplash.com/photos/oI6zrBj3nKw",
-    "thumbnail": "https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png"
-  },
-  {
-    "username": "valorant",
-    "title": "walorant lan with steffe",
-    "subtitle": "anomaly",
+    "gameName": "valorant",
     "language": "english",
     "category1": "fps",
     "category2": "shooter",

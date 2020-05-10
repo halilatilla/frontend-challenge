@@ -26,6 +26,7 @@ export default {
   background-color: $bg-color;
   display: grid;
   grid-template-columns: max-content 1fr;
+  overflow: hidden;
   .header {
     grid-column: 1/3;
   }

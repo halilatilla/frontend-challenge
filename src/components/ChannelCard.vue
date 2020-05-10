@@ -1,9 +1,13 @@
 <script>
 import TagButton from "./TagButton";
+import Thumbnail from "./Thumbnail";
+import TagLive from "./TagLive";
 export default {
   props: [],
   components: {
-    TagButton
+    TagButton,
+    Thumbnail,
+    TagLive
   }
 };
 </script>
@@ -11,17 +15,21 @@ export default {
 
 <template lang='pug'>
   .container 
+    TagLive
     .img-previev
-        img(src='https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-188x250.jpg')
+        img(src='https://static-cdn.jtvnw.net/previews-ttv/live_user_anomaly-440x248.jpg')
     .info
+        .thumbnail
+          Thumbnail(children='https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png')
         .detail
-            .item.title walorant
-            .item.subcribe 274K Viewers
+            .item.title walorant lan with steffe
+            .item.username anomaly
+            .item.game-name Valorant
             .tags
+                .tags-item
+                  TagButton(children='English')
                 .tags-item  
-                  TagButton(children='Fps')
-                .tags-item  
-                  TagButton(children='Shoter')
+                  TagButton(children='Drops Enabled')
 </template>
 
 
@@ -47,7 +55,10 @@ export default {
     display: grid;
     grid-template-columns: max-content 1fr;
     margin-top: $base-margin;
-
+    .thumbnail {
+      width: 40px;
+      height: 40px;
+    }
     .detail {
       margin-left: $base-margin;
       .item {
@@ -60,10 +71,6 @@ export default {
       }
       .title {
         text-transform: uppercase;
-        font-weight: bold;
-      }
-      .subcribe {
-        font-size: 12px;
       }
       .tags {
         display: flex;

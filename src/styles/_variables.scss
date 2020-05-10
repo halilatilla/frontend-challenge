@@ -5,6 +5,11 @@ $bg-color: #050404;
 $bg-color-secondary: #18181b;
 $bg-color-button: #4f4e51;
 $text-color: #e4e4e6;
-$breakpoint-tablet: 768px;
+$breakpoint-mobile: 768px;
 $base-font-size: 14px;
 $base-margin: 9px;
+$border-bottom: 1px solid
+  rgba(
+    $color: #fff,
+    $alpha: 0.1,
+  );
