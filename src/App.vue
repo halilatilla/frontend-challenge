@@ -23,12 +23,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  align-content: flex-start;
-  .header {
-    grid-column: 1/3;
-  }
 }
 a {
   text-decoration: none;

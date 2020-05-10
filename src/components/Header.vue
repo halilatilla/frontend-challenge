@@ -45,6 +45,9 @@ export default {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   &-left {
     display: flex;
     justify-content: space-between;

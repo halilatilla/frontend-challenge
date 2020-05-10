@@ -28,7 +28,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-flow: dense;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1rem;
   }
 }

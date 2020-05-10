@@ -28,6 +28,7 @@ export default {
   cursor: pointer;
   span {
     font-size: $base-font-size;
+    margin-bottom: -2px;
   }
   img {
     width: 15px;

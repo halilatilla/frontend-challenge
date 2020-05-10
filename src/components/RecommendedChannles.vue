@@ -23,6 +23,10 @@ export default {
 .container {
   width: 50px;
   height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 57px;
   overflow: hidden;
   background-color: $bg-color-secondary;
   display: flex;

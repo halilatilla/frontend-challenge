@@ -72,4 +72,12 @@ export default {
     }
   }
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .detail-header {
+    &-center {
+      display: none;
+    }
+  }
+}
 </style>

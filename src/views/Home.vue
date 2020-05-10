@@ -25,6 +25,7 @@ export default {
 .home {
   padding: 2rem;
   overflow: hidden;
+  margin-left: 50px;
 }
 @media (max-width: $breakpoint-mobile) {
   .home {

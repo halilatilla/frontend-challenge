@@ -24,6 +24,7 @@ export default {
 .detail {
   overflow: hidden;
   height: 100%;
+  margin-left: 50px;
 }
 @media (max-width: $breakpoint-mobile) {
   .detail {
