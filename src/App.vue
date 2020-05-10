@@ -22,6 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
+  background-color: $bg-color;
 }
 a {
   text-decoration: none;

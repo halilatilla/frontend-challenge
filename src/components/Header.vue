@@ -1,8 +1,10 @@
 <script>
 import Search from "../components/Search";
+import Button from "../components/Button";
 export default {
   components: {
-    Search
+    Search,
+    Button
   }
 };
 </script>
@@ -19,20 +21,26 @@ export default {
           .item Exports
         router-link(to='/Music')
           .item Music
-    Search
-    .header-right        
+    Search.header-search
+    .header-right
+      span.item messages        
+      span.item
+        Button(children='Log in')       
+      span.item
+        Button(children='Sign up' activeBg="true")       
+      span.item profile       
 </template>
 
 
 <style scoped lang="scss">
 .header {
-  background-color: $bg-color;
+  background-color: $bg-color-secondary;
   height: 40px;
   padding: 3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid black;
   &-left {
     display: flex;
     justify-content: space-between;
@@ -54,7 +62,17 @@ export default {
       }
     }
   }
-  &-search {
+  &-right {
+    display: flex;
+    align-items: center;
+    .item {
+      margin-left: $base-margin;
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .header-search {
+    display: none;
   }
 }
 </style>

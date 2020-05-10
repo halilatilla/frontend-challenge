@@ -22,7 +22,7 @@ export default {};
     color: white;
     &::placeholder {
       color: $text-color;
-      font-size: 14px;
+      font-size: $base-font-size;
     }
   }
 }
