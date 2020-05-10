@@ -1,11 +1,13 @@
 <script>
 import TagButton from "./TagButton";
 import Thumbnail from "./Thumbnail";
+import LiveTag from "./LiveTag";
 export default {
   props: [],
   components: {
     TagButton,
-    Thumbnail
+    Thumbnail,
+    LiveTag
   }
 };
 </script>
@@ -13,10 +15,12 @@ export default {
 
 <template lang='pug'>
   .container 
+    LiveTag
     .img-previev
         img(src='https://static-cdn.jtvnw.net/previews-ttv/live_user_anomaly-440x248.jpg')
     .info
-        Thumbnail(children='https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png')
+        .thumbnail
+          Thumbnail(children='https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png')
         .detail
             .item.title walorant lan with steffe
             .item.game-name anomaly
@@ -31,6 +35,7 @@ export default {
 
 <style scoped lang="scss">
 .container {
+  position: relative;
   .img-previev {
     width: 100%;
     overflow: hidden;
@@ -50,6 +55,10 @@ export default {
     display: grid;
     grid-template-columns: max-content 1fr;
     margin-top: $base-margin;
+    .thumbnail {
+      width: 40px;
+      height: 40px;
+    }
     .detail {
       margin-left: $base-margin;
       .item {

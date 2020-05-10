@@ -35,7 +35,7 @@ export default {
 <style scoped lang="scss">
 .header {
   background-color: $bg-color-secondary;
-  height: 40px;
+  height: 50px;
   padding: 3px;
   display: flex;
   align-items: center;

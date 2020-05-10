@@ -1,17 +1,18 @@
 <template lang='pug'>
   #app
-    Header
+    Header.header
+    RecommendedChannles
     router-view  
 </template>
 
 <script>
 import "./styles/normalize.css";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import RecommendedChannles from "./components/RecommendedChannles";
 export default {
   components: {
     Header,
-    Footer
+    RecommendedChannles
   }
 };
 </script>
@@ -23,6 +24,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
   background-color: $bg-color;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  .header {
+    grid-column: 1/3;
+  }
 }
 a {
   text-decoration: none;

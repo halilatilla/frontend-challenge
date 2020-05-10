@@ -1,20 +1,16 @@
 <template lang='pug'>
   .home
-    .recommended-cards
-      .title  Live channels we think you'll like
-      .cards
-        GameCard
-        GameCard
-        GameCard
-        GameCard
+    LiveChannels
 
 </template>
 
 <script>
 import GameCard from "../components/GameCard";
+import LiveChannels from "../components/LiveChannels";
 export default {
   components: {
-    GameCard
+    GameCard,
+    LiveChannels
   },
   computed: {}
 };
@@ -23,17 +19,5 @@ export default {
 <style scoped lang='scss'>
 .home {
   padding: 2rem;
-  .recommended-cards {
-    .title {
-      font-weight: bold;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-auto-flow: dense;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-  }
 }
 </style>

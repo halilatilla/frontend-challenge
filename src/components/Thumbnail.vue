@@ -13,8 +13,6 @@ export default {
 
 <style scoped lang="scss">
 .thumbnail {
-  width: 40px;
-  height: 40px;
   overflow: hidden;
   border-radius: 50%;
   display: flex;
@@ -22,8 +20,7 @@ export default {
   justify-content: center;
   cursor: pointer;
   img {
-    width: 40px;
-    height: 40px;
+    width: 100%;
   }
 }
 </style>
